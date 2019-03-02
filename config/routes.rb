@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :tasks
+  
   root to: 'toppages#index'
   
   get 'login', to: 'sessions#new'
