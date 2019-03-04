@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   resources :tasks
   
+  get 'tasks/:id/edit', to: 'tasks#edit'
+  
   root to: 'toppages#index'
   
   get 'login', to: 'sessions#new'
